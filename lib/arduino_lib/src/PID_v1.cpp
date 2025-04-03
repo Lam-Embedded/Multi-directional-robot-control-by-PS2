@@ -75,7 +75,7 @@ bool PID::Compute()
       /*Compute Rest of PID Output*/
       output += outputSum - kd * dInput;
 
-	    if(output > outMax) output = outMax;
+	   if(output > outMax) output = outMax;
       else if(output < outMin) output = outMin;
 	    *myOutput = output;
 

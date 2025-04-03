@@ -10,14 +10,12 @@ Emakefun_Servo *mServo6 = mMotorDriver.getServo(6);
 Emakefun_Servo *mServo7 = mMotorDriver.getServo(7);
 Emakefun_Servo *mServo8 = mMotorDriver.getServo(8);
 
-void setup()
-{
+void setup() {
     Serial.begin(9600);
     mMotorDriver.begin(50);
 }
 
-void loop()
-{
+void loop() {
     mServo1->writeServo(0);
     mServo2->writeServo(0);
     mServo3->writeServo(0);
